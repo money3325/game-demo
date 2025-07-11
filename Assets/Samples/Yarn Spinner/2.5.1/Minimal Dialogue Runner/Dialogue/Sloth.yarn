@@ -1,0 +1,67 @@
+﻿title: Sloth
+tags:
+---
+:一个时钟
+:时间指向七点
+:不知道是早上还是晚上
+===
+title: Bed
+tags:
+---
+:刚刚醒过来的地方
+:这床..还挺大的
+:等下，好想摸到了什么
+:一个指向八点的时钟
+===
+title: Paper
+tags:
+---
+:这是？各式各样的文件？
+:这张好像写了什么
+:滴答滴答，指针轻响，
+:五个时间，各显异象。
+:四个诉说真实过往，
+:一个谎言，藏在中央。
+===
+title: Book
+tags:
+---
+:昙花的研究
+:昙花，是一种晚上九点开始绽放的花
+:在夏季和秋季开花，一般在6～10月份。
+===
+title: World
+tags:
+---
+:墙上这是。。昙花？
+:怎么长在墙上？
+:看着像刚绽放的样子。
+===
+title: Clothes
+tags:
+---
+<<if visited("Clothes") is false>>
+:翻了翻这堆衣服
+:翻出一部手机
+<<Act 手机 phone1 center center green>>
+云诡:【太好了，找到一部手机，显示四点，看看能不能打电话】
+云诡:啊啊啊啊！为什么没信号！
+<<Hide 手机>>
+:突然间收到一封传信
+<<ShowPanel  "Canvas phone">>
+:
+<<HidePanel "Canvas phone">>
+
+<<else>>
+<<ShowPanel  "Canvas phone">>
+:
+<<HidePanel "Canvas phone">>
+
+<<endif>>
+===
+title: Laji
+tags:
+---
+:里面有张揉成团的纸条
+:（明天八点小组一起编写报告，不要迟到了）
+===
